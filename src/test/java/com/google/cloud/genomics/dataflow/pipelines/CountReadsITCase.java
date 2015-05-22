@@ -188,20 +188,12 @@ public class CountReadsITCase {
     testCloudWithAPIBase("CountReadsITCase-testCloudWithAPI-output.txt",
         TEST_CONTIG, TEST_READGROUPSET, TEST_EXPECTED);
   }
-  
-<<<<<<< HEAD
+
   @Test
   public void testCloudWithAPI_NA12877_S1() throws Exception {
     testCloudWithAPIBase("CountReadsITCase-testCloudWithAPI-NA12877_S1-output.txt",
         NA12877_S1_CONTIG, NA12877_S1_READGROUPSET, NA12877_S1_EXPECTED);
   }
-=======
-//  @Test
-//  public void testCloudWithAPI_NA12877_S1() throws Exception {
-//    testCloudWithAPIBase("CountReadsITCase-testCloudWithAPI-NA12877_S1-output.txt",
-//        NA12877_S1_CONTIG, NA12877_S1_READGROUPSET, NA12877_S1_EXPECTED);
-//  }
->>>>>>> a02cf36e7d2ca16314fd0f400b3baf42fa8ff18c
 
   /**
    * Make sure we can get to the output.
