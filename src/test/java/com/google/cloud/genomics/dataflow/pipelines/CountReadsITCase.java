@@ -55,7 +55,6 @@ public class CountReadsITCase {
   final String NA12877_S1_CONTIG = "chr17:41196311:41277499";
   final long NA12877_S1_EXPECTED = 45081;
 
-  @Before
   public void voidEnsureEnvVar() {
     Assert.assertNotNull("You must set the GOOGLE_API_KEY environment variable for this test.", API_KEY);
     Assert.assertNotNull("You must set the TEST_PROJECT environment variable for this test.", TEST_PROJECT);
@@ -190,11 +189,19 @@ public class CountReadsITCase {
         TEST_CONTIG, TEST_READGROUPSET, TEST_EXPECTED);
   }
   
+<<<<<<< HEAD
   @Test
   public void testCloudWithAPI_NA12877_S1() throws Exception {
     testCloudWithAPIBase("CountReadsITCase-testCloudWithAPI-NA12877_S1-output.txt",
         NA12877_S1_CONTIG, NA12877_S1_READGROUPSET, NA12877_S1_EXPECTED);
   }
+=======
+//  @Test
+//  public void testCloudWithAPI_NA12877_S1() throws Exception {
+//    testCloudWithAPIBase("CountReadsITCase-testCloudWithAPI-NA12877_S1-output.txt",
+//        NA12877_S1_CONTIG, NA12877_S1_READGROUPSET, NA12877_S1_EXPECTED);
+//  }
+>>>>>>> a02cf36e7d2ca16314fd0f400b3baf42fa8ff18c
 
   /**
    * Make sure we can get to the output.
