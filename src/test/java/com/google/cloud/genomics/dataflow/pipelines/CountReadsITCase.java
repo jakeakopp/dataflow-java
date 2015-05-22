@@ -49,12 +49,12 @@ public class CountReadsITCase {
   final String TEST_CONTIG = "1:550000:560000";
   // How many reads are in that region.
   final long TEST_EXPECTED = 685;
-  final String NA12877_S1_CONTIG = "chr17:41196311:41277499";
+  // Same as the above variables, but for the NA12877_S1 dataset.
   final String NA12877_S1_BAM_FILENAME = "gs://genomics-public-data/platinum-genomes/bam/NA12877_S1.bam";
-  final String NA12877_S1_READGROUPSET = "TODO: figure out what goes here";
-  final long NA12877_S1_EXPECTED = 54298;
+  final String NA12877_S1_READGROUPSET = "CMvnhpKTFhD3he72j4KZuyc";
+  final String NA12877_S1_CONTIG = "chr17:41196311:41277499";
+  final long NA12877_S1_EXPECTED = 45081;
 
-  @Before
   public void voidEnsureEnvVar() {
     Assert.assertNotNull("You must set the GOOGLE_API_KEY environment variable for this test.", API_KEY);
     Assert.assertNotNull("You must set the TEST_PROJECT environment variable for this test.", TEST_PROJECT);
